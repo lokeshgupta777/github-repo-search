@@ -1,0 +1,28 @@
+.cont {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  > span {
+    font-size: 14px;
+  }
+
+  svg {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 13px !important;
+  }
+
+  button:first-child {
+    margin-right: 10px;
+  }
+
+  button:last-child {
+    margin-left: 10px;
+  }
+}
