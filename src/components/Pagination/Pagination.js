@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { PAGE_SIZE } from "../../utils/constants";
+import { PAGE_SIZE, MAX_SEARCH_RESULTS } from "../../utils/constants";
 import { useMemo } from "react";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
@@ -8,7 +8,7 @@ import styles from "./Pagination.module.scss"
 const Pagination = ({ page, setPage, repoCount, searchParams, setSearchParams }) => {
 
   const noPages = useMemo(() => {
-    return Math.ceil(repoCount / PAGE_SIZE);
+    return Math.min(Math.ceil(repoCount / PAGE_SIZE), MAX_SEARCH_RESULTS / PAGE_SIZE);
   }, [repoCount])
 
   const middleButtonsToMap = () => {
