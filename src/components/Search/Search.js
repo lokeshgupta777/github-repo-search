@@ -46,7 +46,8 @@ const SearchAndSort = ({ searchText, setSearchText, sort, setSort, setPage, setS
           "& .MuiInputBase-input": { fontSize: "16px" },
         }}
         className={styles.search}
-
+        autoComplete="off"
+        id='password'
       />
       {repoCount ? (
         <FormControl size="small" className={styles.sortCont}>
