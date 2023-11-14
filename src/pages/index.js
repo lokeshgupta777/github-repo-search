@@ -106,23 +106,27 @@ const GitHubRepos = () => {
       />
       {searchText &&
         <div>
-          <div className={styles.reposCont}>
-            {loading ? (
-              <Loader />
-            ) : error ? (
-              <p>{error}</p>
-            ) : !repoCount ? (
-              <p>No data Found !!!</p>
-            ) : (repoData.map((data, index) => <Card key={data?.id} data={data} />)
-            )}
-          </div>
-          <Pagination
-            page={page}
-            setPage={setPage}
-            repoCount={repoCount}
-            searchParams={searchParams}
-            setSearchParams={setSearchParams}
-          />
+
+          {loading ? (
+            <Loader />
+          ) : error ? (
+            <p className={styles.error}>{error}</p>
+          ) : !repoCount ? (
+            <p className={styles.error}>No data Found !!!</p>
+          ) : (
+            <>
+              <div className={styles.reposCont}>
+                {repoData.map((data, index) => <Card key={data?.id} data={data} />)}
+              </div>
+              <Pagination
+                page={page}
+                setPage={setPage}
+                repoCount={repoCount}
+                searchParams={searchParams}
+                setSearchParams={setSearchParams}
+              />
+            </>
+          )}
         </div>
       }
     </div>
