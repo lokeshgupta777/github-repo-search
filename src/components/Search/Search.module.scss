@@ -1,0 +1,30 @@
+.cont {
+  margin-top: 20px;
+}
+.search {
+  width: 500px !important;
+  height: 40px !important;
+}
+.sortCont {
+  margin-left: 40px !important;
+}
+.sortLabel {
+  font-size: 15px !important;
+}
+.sortSelect {
+  height: 40px !important;
+  width: 115px !important;
+
+  > div {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+
+  li {
+    font-size: 12px !important;
+  }
+
+  legend {
+    font-size: 12px !important;
+  }
+}
