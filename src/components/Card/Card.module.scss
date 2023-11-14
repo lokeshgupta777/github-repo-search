@@ -1,0 +1,52 @@
+.repo {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+  width: 650px;
+  height: 108px;
+  gap: 20px;
+  align-items: center;
+
+  &__img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  &__nameAndDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    width: 100%;
+
+    a {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 16px;
+      // height: 48px;
+    }
+
+    div {
+      display: flex;
+      gap: 10px;
+      font-size: 12px;
+    }
+  }
+
+  &__stars {
+    font-size: 14px;
+    margin-top: 5px;
+    align-self: flex-start;
+    display: flex;
+  }
+}
