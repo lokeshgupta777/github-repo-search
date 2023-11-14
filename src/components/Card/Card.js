@@ -4,7 +4,7 @@ import getFormattedDate from "../../utils/getFormattedDate";
 
 const Card = ({ data }) => {
 
-  
+
 
   return (
     <div className={styles.repo}>
@@ -18,12 +18,9 @@ const Card = ({ data }) => {
           <span>Updated: {getFormattedDate(new Date(data?.pushed || data?.updated))}</span>
         </div>
       </div>
-      <div>
-        <span className={styles.repo__stars}>
-          <StarIcon htmlColor="yellow" /> {data?.stars}
-        </span>
-
-      </div>
+      <span className={styles.repo__stars}>
+        <StarIcon htmlColor="yellow" /> {data?.stars}
+      </span>
     </div>
   )
 }

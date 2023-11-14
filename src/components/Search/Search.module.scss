@@ -28,3 +28,20 @@
     font-size: 12px !important;
   }
 }
+
+@media screen and (max-width:600px) {
+  .cont{
+    width: 100vw;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search{
+    width: calc(100% - 135px) !important;
+  }
+
+  .sortCont{
+    margin-left: 20px !important;
+  }
+}

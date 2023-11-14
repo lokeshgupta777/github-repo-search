@@ -26,3 +26,16 @@
     margin-left: 10px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .cont {
+    width: 100vw;
+    padding: 0 16px;
+    justify-content: space-between;
+
+    button {
+      min-width: unset;
+      width: 42px !important;
+    }
+  }
+}
