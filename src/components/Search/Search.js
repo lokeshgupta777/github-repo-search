@@ -70,7 +70,7 @@ const SearchAndSort = ({ searchText, setSearchText, sort, setSort, setPage, setS
             <MenuItem value="best-match">Best Match</MenuItem>
             <MenuItem value="name">Name</MenuItem>
             <MenuItem value="stars">Stars</MenuItem>
-            <MenuItem value="created">Created</MenuItem>
+            <MenuItem value="author-date">Created</MenuItem>
             <MenuItem value="updated">Updated</MenuItem>
           </Select>
         </FormControl>

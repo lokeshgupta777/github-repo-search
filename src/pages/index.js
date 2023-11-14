@@ -34,7 +34,7 @@ const GitHubRepos = () => {
     setError("");
 
     try {
-      const dataRes = await fetch(`https://api.github.com/search/repositories?q=${query}&per_page=${PAGE_SIZE}&page=${page}&sort=${sort}&order=${order}`, {
+      const dataRes = await fetch(`https://api.github.com/search/repositories?q=${query}&per_page=${PAGE_SIZE}&page=${page}&sort=${sort}&order=${order}`, {     //q=${encodeURIComponent(query + " in:name,description,readme")}
         method: "GET",
         headers: {
           "Accept": "application/vnd.github+json",
